@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="trsemu-1.4.js"></script> 
+<head>
+<body onload="trsEmu.screen('scrn').button('btn').perf('graph').focus();trsEmu.run('|\r\r{volcano.png}');"> 
+
+<div color="black" id="scrn">
+<canvas width="512" height="384" style="background:black">
+</canvas></div><br>
+<input type="button" value="Volcano Hunter" onClick="trsEmu.run('|\r\r{volcano.png}');">
+<input type="button" value="Volcano Hunter (trainer)" onClick="trsEmu.run('|\r\r{vhtrainer.png}');">
+<input type="button" id="btn" value="Run"
+  onClick="trsEmu.run('toggle');">
+<br>
+<p><b>KEYS</b><br>
+Right Arrow - Move Right<br>
+Left Arrow - Move Left<br>
+Up Arrow - Climb up a ladder or jump up<br>
+Down Arrow - Climb down a ladder or jump down<br>
+Space Bar - Drops a timed bomb. The longer you hold the space bar, the longer until it explodes.<br>
+</body>
+<html>
